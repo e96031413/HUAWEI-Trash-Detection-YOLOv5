@@ -35,3 +35,10 @@ splitfolders.ratio('huawei-tmp', output="huawei-trash-dataset", seed=1337, ratio
 ```
 
 To be continued.......
+
+### YOLOv5 Training
+Assuming you have setted up the environment,we provide pre-configured [trash.yaml](https://github.com/e96031413/HUAWEI-Trash-Detection-YOLOv5/blob/main/trash.yaml), you can put it in yolov5/data/trash.yaml(change path at your own) and train with the following command (2GPUs):
+```
+cd yolov5
+python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
+```
