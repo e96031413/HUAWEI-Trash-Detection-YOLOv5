@@ -84,3 +84,11 @@ python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolo
 cd yolov5
 python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights '' --devices 2,3
 ```
+
+#### TODO
+Due to the low mAP problem (only 16% currently on yolov5s, 100 epochs), we decide to train the model with different split
+```
+80% / 10% / 10% split           # This is where we work on now and get 16% mAP.
+100% huawei image training / 50% taco image val /  50% taco image test  # To be tested
+80% / 10% / 10% split but combined huawei and taco dataset # To be tested
+```
