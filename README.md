@@ -1,8 +1,12 @@
 # HUAWEI-Trash-Detection-YOLOv5
 Training dataset from Huawei Cloud competition 2020
 
-### Download the original dataset from Baidu Yun
-link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA password: znk3
+### Download the original dataset from BaiduYun
+The dataset source is from [this post](https://blog.csdn.net/qq_38410428/article/details/106974147)
+
+link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA 
+
+password: znk3
 
 ### Data format conversion
 
