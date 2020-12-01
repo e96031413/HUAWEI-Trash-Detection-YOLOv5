@@ -33,7 +33,8 @@ Tha maximum image size is 5.25 MB, the minimum image size is 1.25 KB
 ```
 
 ### Dataset classes in Traditional Chinese
-
+You can refer to [trash-中文.yaml](https://github.com/e96031413/HUAWEI-Trash-Detection-YOLOv5/blob/main/trash-%E4%B8%AD%E6%96%87.yaml)
+but do not use it to train model, it could result garbled text on bounding box.
 ```
 '一次性快餐盒', '書籍紙張', '充電寶', '剩飯剩菜', '包', '垃圾桶', '塑料器皿', '塑料玩具', '塑料衣架', '大骨頭', '乾電池',
 '快遞紙袋', '插頭電線', '舊衣服', '易拉罐','枕頭', '果皮果肉', '毛絨玩具', '污損塑料', '污損用紙', '洗護用品', '煙蒂',
