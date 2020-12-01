@@ -17,7 +17,7 @@ The original format is VOC2007, we use [convert2Yolo](https://github.com/ssaru/c
 ```
 python3 example.py --datasets VOC --img_path ../trainval/VOC2007/JPEGImages --label ../trainval/VOC2007/Annotations/ --convert_output_path ./yolo/ --img_type ".jpg" --manifest_path ./ --cls_list_file ../trainval/train_classes.txt
 ```
-note: you should change to path according to your own folder.
+note: you should change the path according to your own folder.
 
 ### Split training set / val set / test set
 ```
