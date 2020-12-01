@@ -24,50 +24,20 @@ Tha maximum image size is 5.25 MB, the minimum image size is 1.25 KB
 ### Dataset classes
 
 ```
-Disposable snack box
-Book paper
-power Bank
-Leftovers
-package
-trash can
-Plastic utensils
-plastic toys
-Plastic hangers
-Big bones
-Dry cell
-Express paper bag
-Plug wire
-old clothes
-Can
-pillow
-Peel and pulp
-Plush toys
-Stained plastic
-Stained paper
-Toiletries
-Cigarette butts
-toothpick
-glassware
-Cutting board
-chopsticks
-Carton box
-flower pot
-Tea residue
-Caibang Caiye
-eggshell
-Condiment bottles
-ointment
-Expired drugs
-Wine bottle
-Metal kitchenware
-Metal utensils
-Metal food can
-pot
-Ceramic ware
-shoe
-Edible oil drum
-Drink bottle
-fish bone
+'Disposable Fast Food Box','Book Paper','Power Bank','Leftovers','Package','Trash Can','Plastic Utensils','Plastic Toys',
+'Plastic Hangers',"Big Bones","Dry Battery","Express Paper Bag", "Plug Wire", "Old Clothes", "Can", "Pillow",
+"Peel and Pulp", "Stuffed Toy", "Defiled Plastic", "Contaminated paper","Toilet care products", "Cigarette butts",
+"Toothpicks", "Glassware","Baffle", "Chopsticks", "Carton box", "Flower pot", "Tea residue", "Cai Bang Cai Ye",
+"Egg Shell", "Sauce Bottle", "Ointment", "Expired Medicine", "Wine Bottle", "Metal Kitchenware", "Metal Utensils",
+"Metal Food Cans", "Pots" , "Ceramic utensils", "shoes", "edible oil drums", "drink bottles", "fish bones"
+```
+
+### Dataset classes in Traditional Chinese
+
+```
+['一次性快餐盒', '書籍紙張', '充電寶', '剩飯剩菜', '包', '垃圾桶', '塑料器皿', '塑料玩具', '塑料衣架', '大骨頭', '乾電池', '快遞紙袋', '插頭電線', '舊衣服', '易拉罐', 
+'枕頭', '果皮果肉', '毛絨玩具', '污損塑料', '污損用紙', '洗護用品', '煙蒂', '牙簽', '玻璃器皿', '砧板', '筷子', '紙盒紙箱', '花盆', '茶葉渣', '菜幫菜葉', 
+'蛋殼', '調料瓶', '軟膏', '過期藥物', '酒瓶', '金屬廚具', '金屬器皿', '金屬食品罐', '鍋', '陶瓷器皿', '鞋', '食用油桶', '飲料瓶', '魚骨']
 ```
 
 ### Data format conversion
