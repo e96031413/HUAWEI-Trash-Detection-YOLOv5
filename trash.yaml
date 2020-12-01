@@ -10,7 +10,7 @@ val:   ../trash_detection/huawei-trash-dataset/val/images
 test: ../trash_detection/huawei-trash-dataset/test/images
 
 # number of classes
-nc: 44  # nc: 8
+nc: 44  
 
 # class names
-names: ['一次性快餐盒', '書籍紙張', '充電寶', '剩飯剩菜', '包', '垃圾桶', '塑料器皿', '塑料玩具', '塑料衣架', '大骨頭', '乾電池', '快遞紙袋', '插頭電線', '舊衣服', '易拉罐', '枕頭', '果皮果肉', '毛絨玩具', '污損塑料', '污損用紙', '洗護用品', '煙蒂', '牙簽', '玻璃器皿', '砧板', '筷子', '紙盒紙箱', '花盆', '茶葉渣', '菜幫菜葉', '蛋殼', '調料瓶', '軟膏', '過期藥物', '酒瓶', '金屬廚具', '金屬器皿', '金屬食品罐', '鍋', '陶瓷器皿', '鞋', '食用油桶', '飲料瓶', '魚骨']
+names: ['Disposable Fast Food Box','Book Paper','Power Bank','Leftovers','Package','Trash Can','Plastic Utensils','Plastic Toys','Plastic Hangers' , "Big Bones", "Dry Battery", "Express Paper Bag", "Plug Wire", "Old Clothes", "Can", "Pillow", "Peel and Pulp", "Stuffed Toy", "Defiled Plastic", "Contaminated paper", "Toilet care products", "Cigarette butts", "Toothpicks", "Glassware", "Baffle", "Chopsticks", "Carton box", "Flower pot", "Tea residue", "Cai Bang Cai Ye", "Egg Shell", "Sauce Bottle", "Ointment", "Expired Medicine", "Wine Bottle", "Metal Kitchenware", "Metal Utensils", "Metal Food Cans", "Pots" , "Ceramic utensils", "shoes", "edible oil drums", "drink bottles", "fish bones"]
