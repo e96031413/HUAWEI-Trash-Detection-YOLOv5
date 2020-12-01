@@ -8,6 +8,17 @@ link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA
 
 password: znk3
 
+### Download the post-process dataset from Google Drive(Data format conversion part)
+You can download the processed dataset [here](https://drive.google.com/file/d/1E6JtyAt_TRSrK47d9F6-OtC9rrKFXsDc/view?usp=sharing)
+
+**train:val:test = 80 : 10 : 10**
+
+-train: 11971 images
+
+-val: 1496 images
+
+-test: 1497 images
+
 ### Data format conversion
 
 We use dataset from Huawei Cloud competition 2020
@@ -39,8 +50,14 @@ splitfolders.ratio('huawei-tmp', output="huawei-trash-dataset", seed=1337, ratio
 
 ### YOLOv5 Training
 Assuming you have setted up the environment,we provide pre-configured [trash.yaml](https://github.com/e96031413/HUAWEI-Trash-Detection-YOLOv5/blob/main/trash.yaml), you can put it in yolov5/data/trash.yaml(change path at your own) and train with the following command (2GPUs):
+
+#### with pre-trained weight
 ```
 cd yolov5
 python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
 ```
-To be continued.......
+#### from scratch
+```
+cd yolov5
+python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights '' --devices 2,3
+```
