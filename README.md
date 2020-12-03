@@ -53,6 +53,7 @@ note: you should change the path according to your own folder.
 
 ### Split training set / val set
 put all your img and labels(coco format) to **huawei-tmp/images/** and **huawei-tmp/labels/** respectively.
+
 and use [this script](https://gist.github.com/e96031413/7b2d832d1cc12a11be374b1c1a570aa9#file-makedataset-py) to split dataset(change to your own path)
 
 ### YOLOv5 Training
