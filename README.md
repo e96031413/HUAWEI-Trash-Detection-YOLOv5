@@ -13,13 +13,11 @@ You can download the processed dataset [here](https://drive.google.com/file/d/1E
 
 Tha maximum image size is 5.25 MB, the minimum image size is 1.25 KB
 
-**train:val:test = 80 : 10 : 10**
+**train:val= 80 : 20**
 
--train: 11971 images
+-train: 9410 images
 
--val: 1496 images
-
--test: 1497 images
+-val: 2349 images
 
 ### Dataset classes
 
@@ -53,23 +51,9 @@ python3 example.py --datasets VOC --img_path ../trainval/VOC2007/JPEGImages --la
 ```
 note: you should change the path according to your own folder.
 
-### Split training set / val set / test set
+### Split training set / val set
 put all your img and labels(coco format) to **huawei-tmp/images/** and **huawei-tmp/labels/** respectively.
-```
-mkdir ./huawei-tmp/images
-mkdir ./huawei-tmp/labels
-
-
-# split-folders
-pip3 install split-folders
-
-# current dir should be ./ instead of ./huawei-tmp
-
-# you can change to any split (0.6, 0.2, 0.2) for 60% : 20%: 20%
-python3
-import splitfolders
-splitfolders.ratio('huawei-tmp', output="huawei-trash-dataset", seed=1337, ratio=(.8, 0.1,0.1)) 
-```
+and use [this script](https://gist.github.com/e96031413/7b2d832d1cc12a11be374b1c1a570aa9#file-makedataset-py) to split dataset(change to your own path)
 
 ### YOLOv5 Training
 Assuming you have setted up the environment,we provide pre-configured [trash.yaml](https://github.com/e96031413/HUAWEI-Trash-Detection-YOLOv5/blob/main/trash.yaml), you can put it in yolov5/data/trash.yaml(change path at your own) and train with the following command (2GPUs):
@@ -77,18 +61,11 @@ Assuming you have setted up the environment,we provide pre-configured [trash.yam
 #### with pre-trained weight
 ```
 cd yolov5
-python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
+python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 64 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
 ```
-#### from scratch
+#### Training result
 ```
-cd yolov5
-python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 16 --data trash.yaml --weights '' --devices 2,3
-```
-
-#### TODO
-Due to the low mAP problem (only 16% currently on yolov5s, 100 epochs), we decide to train the model with different split
-```
-80% / 10% / 10% split           # This is where we work on now and get 16% mAP.
-100% huawei image training / 50% taco image val /  50% taco image test  # To be tested
-80% / 10% / 10% split but combined huawei and taco dataset # To be tested
+YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size = 640
+Class    Images     Targets    P       R      mAP@.5   mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
+ all    2.38e+03    3.91e+03   0.556   0.697   0.663     0.506
 ```
