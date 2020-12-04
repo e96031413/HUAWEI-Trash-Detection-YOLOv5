@@ -70,3 +70,7 @@ YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size =
 Class    Images     Targets    P       R      mAP@.5   mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
  all    2.38e+03    3.91e+03   0.556   0.697   0.663     0.506
 ```
+
+### Download the trained model
+##### YOLOv5s
+[huawei-trash-yolov5s.pt](https://drive.google.com/file/d/1h4deB3p72AKJO8mgVJzCLNMx0NtIng0X/view?usp=sharing)
