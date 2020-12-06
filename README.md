@@ -4,9 +4,9 @@ Training dataset from Huawei Cloud competition 2020 with YOLOv5
 ### Download the original dataset from BaiduYun
 The dataset source is from [this post](https://blog.csdn.net/qq_38410428/article/details/106974147)
 
-link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA 
+link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA  ； password: znk3
 
-password: znk3
+or you can download from google drive [here](https://drive.google.com/file/d/1RlVXHu0ndlfYa1R_QPZusF_abp85bECr/view?usp=sharing)
 
 ### Download the post-process dataset from Google Drive(Data format conversion part)
 You can download the processed dataset [here](https://drive.google.com/file/d/16VZwblyDb37hONzrfpVLwKfh3fcUeRw3/view?usp=sharing)
