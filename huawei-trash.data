@@ -1,0 +1,6 @@
+classes= 80
+train  = /root/notebooks/nfs/data/work/yanwei.liu/trash_detection/huawei-trash-dataset/train/trash-train.txt
+valid  = /root/notebooks/nfs/data/work/yanwei.liu/trash_detection/huawei-trash-dataset/val/trash-val.txt
+names = /root/notebooks/nfs/data/work/yanwei.liu/darknet/data/huawei-trash.names
+backup = /root/notebooks/nfs/data/work/yanwei.liu/darknet/backup/
+eval=coco
