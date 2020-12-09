@@ -69,11 +69,16 @@ python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolo
 YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size = 640
 Class    Images     Targets    P       R      F1     mAP@.5   mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
  all    2.38e+03    3.91e+03   0.556   0.697  0.618 0.663     0.506
- 
+
 YOLOv4-tiny
 conf_thresh = 0.25, precision = 0.64, recall= 0.57, F1-score = 0.60
 for conf_thresh = 0.25, TP = 2235, FP = 1267, FN = 1679, average IoU = 49.50 %
 IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.580316, or 58.03 % 
+
+YOLOv3-tiny
+conf_thresh = 0.25, precision = 0.73, recall = 0.32, F1-score = 0.44 
+for for conf_thresh = 0.25, TP = 1235, FP = 461, FN = 2679, average IoU = 55.84 % 
+IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
 ```
 
 ### Download the trained model
