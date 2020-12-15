@@ -61,8 +61,14 @@ Assuming you have setted up the environment,we provide pre-configured [trash.yam
 
 #### with pre-trained weight
 ```
-cd yolov5
+YOLOv5s:
 python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 64 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
+
+YOLOv4-tiny:
+./darknet detector train cfg/huawei-trash.data cfg/yolov4-tiny-huawei.cfg yolov4-tiny.conv.29 -gpus 0 -dont_show -map |tee -a v4-tiny-huawei-dataset.txt
+
+YOLOv3-tiny:
+./darknet detector train cfg/huawei-trash.data cfg/yolov3-tiny-huawei.cfg yolov3-tiny.conv.15 -gpus 0 -dont_show -map |tee -a v3-tiny-huawei-dataset.txt
 ```
 #### Testing the trained weight
 ```
@@ -74,12 +80,12 @@ YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size =
 Class    Images     Targets    P       R      F1     mAP@.5   mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
  all    2.38e+03    3.91e+03   0.556   0.697  0.618 0.663     0.506
 
-YOLOv4-tiny
+YOLOv4-tiny, pre-trained weight: yolov4-tiny.conv.29, max_batches=50000, batch size = 64, img size = 416
 conf_thresh = 0.25, precision = 0.64, recall= 0.57, F1-score = 0.60
 for conf_thresh = 0.25, TP = 2235, FP = 1267, FN = 1679, average IoU = 49.50 %
 IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.580316, or 58.03 % 
 
-YOLOv3-tiny
+YOLOv3-tiny, pre-trained weight: yolov3-tiny.conv.15, max_batches=50000, batch size = 64, img size = 416
 conf_thresh = 0.25, precision = 0.73, recall = 0.32, F1-score = 0.44 
 for for conf_thresh = 0.25, TP = 1235, FP = 461, FN = 2679, average IoU = 55.84 % 
 IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
@@ -91,3 +97,6 @@ IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
 
 ##### YOLOv4-tiny
 [yolov4-tiny-huawei_best.weights](https://drive.google.com/file/d/1_FXjjZ90qajkZPdndGuMHgHU1Yl0Sn33/view?usp=sharing)
+
+##### YOLOv3-tiny
+[yolov3-tiny-huawei_best.weights](https://drive.google.com/file/d/1ErTMlDM4TcJadcbNsQEhO3w0_qjCp4AV/view?usp=sharing)
