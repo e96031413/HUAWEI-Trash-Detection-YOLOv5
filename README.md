@@ -64,6 +64,10 @@ Assuming you have setted up the environment,we provide pre-configured [trash.yam
 cd yolov5
 python -m torch.distributed.launch --nproc_per_node 2 train.py --cfg models/yolov5s.yaml --img 640 --epochs 100 --batch-size 64 --data trash.yaml --weights 'yolov5s.pt' --devices 2,3
 ```
+#### Testing the trained weight
+```
+python test.py --weights runs/train/exp3/weights/best.pt --data trash.yaml --img 640
+```
 #### Training result
 ```
 YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size = 640
