@@ -77,8 +77,12 @@ python test.py --weights runs/train/exp3/weights/best.pt --data trash.yaml --img
 #### Training result
 ```
 YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size = 640
-Class    Images     Targets    P       R      F1     mAP@.5   mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
- all    2.38e+03    3.91e+03   0.556   0.697  0.618 0.663     0.506
+Class    Images     Targets    P       R      F1     mAP@.5  mAP@.5:.95: 100%|██████████████| 75/75 [00:16<00:00,  4.56it/s]
+ all    2.38e+03    3.91e+03   0.556   0.697  0.618  0.663   0.506
+
+YOLOv5s, pre-trained weight: yolov5s.pt, 300 epochs, batch size = 64, img size = 416
+Class    Images     Targets    P       R      F1     mAP@.5  mAP@.5:.95: 100%|██████████████| 75/75 [00:32<00:00,  2.33it/s]
+  all    2.38e+03   3.91e+03   0.556   0.71   0.623  0.68    0.545
 
 YOLOv4-tiny, pre-trained weight: yolov4-tiny.conv.29, max_batches=50000, batch size = 64, img size = 416
 conf_thresh = 0.25, precision = 0.64, recall= 0.57, F1-score = 0.60
@@ -92,8 +96,11 @@ IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
 ```
 
 ### Download the trained model
-##### YOLOv5s
+##### YOLOv5s(640)
 [huawei-trash-yolov5s.pt](https://drive.google.com/file/d/1h4deB3p72AKJO8mgVJzCLNMx0NtIng0X/view?usp=sharing)
+
+##### YOLOv5s(416)
+[huawei-trash-yolov5s-416.pt](https://drive.google.com/file/d/1QDDnsZXbxXQNh4qsL_vda9WNA7bRkrQJ/view?usp=sharing)
 
 ##### YOLOv4-tiny
 [yolov4-tiny-huawei_best.weights](https://drive.google.com/file/d/1_FXjjZ90qajkZPdndGuMHgHU1Yl0Sn33/view?usp=sharing)
