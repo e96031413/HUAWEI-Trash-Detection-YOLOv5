@@ -113,3 +113,7 @@ IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
 
 ##### YOLOv3-tiny
 [yolov3-tiny-huawei_best.weights](https://drive.google.com/file/d/1ErTMlDM4TcJadcbNsQEhO3w0_qjCp4AV/view?usp=sharing)
+
+### Project Demo
+View the pdf file to get more details on our project.
+[模組project_最終.pdf](https://github.com/e96031413/HUAWEI-Trash-Detection-YOLOv5/blob/main/%E6%A8%A1%E7%B5%84project_%E6%9C%80%E7%B5%82.pdf)
