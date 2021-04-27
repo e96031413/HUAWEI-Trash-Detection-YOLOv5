@@ -100,20 +100,6 @@ IoU threshold = 50 %, mean average precision (mAP@0.50) = 0.469817, or 46.98 %
 | YOLOv4-Tiny |  58.03% |   12.3  |
 |   YOLOv5s   |   68%   |   5.6   |
 
-
-### Download the trained model
-##### YOLOv5s(640)
-[huawei-trash-yolov5s.pt](https://drive.google.com/file/d/1h4deB3p72AKJO8mgVJzCLNMx0NtIng0X/view?usp=sharing)
-
-##### YOLOv5s(416)
-[huawei-trash-yolov5s-416.pt](https://drive.google.com/file/d/1QDDnsZXbxXQNh4qsL_vda9WNA7bRkrQJ/view?usp=sharing)
-
-##### YOLOv4-tiny
-[yolov4-tiny-huawei_best.weights](https://drive.google.com/file/d/1_FXjjZ90qajkZPdndGuMHgHU1Yl0Sn33/view?usp=sharing)
-
-##### YOLOv3-tiny
-[yolov3-tiny-huawei_best.weights](https://drive.google.com/file/d/1ErTMlDM4TcJadcbNsQEhO3w0_qjCp4AV/view?usp=sharing)
-
 ### Project Demo
 View the pdf file to get more details on our project.
 
