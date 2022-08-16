@@ -6,11 +6,6 @@ The dataset source is from [this post](https://blog.csdn.net/qq_38410428/article
 
 link: https://pan.baidu.com/s/1lh1D1wvXUV3rjJOUpWsBlA  ； password: znk3
 
-or you can download from google drive [here](https://drive.google.com/file/d/1RlVXHu0ndlfYa1R_QPZusF_abp85bECr/view?usp=sharing)
-
-### Download the post-process dataset from Google Drive(Data format conversion part)
-You can download the processed dataset [here](https://drive.google.com/file/d/1E6JtyAt_TRSrK47d9F6-OtC9rrKFXsDc/view?usp=sharing)
-
 Tha maximum image size is 5.25 MB, the minimum image size is 1.25 KB
 
 **train:val= 80 : 20**
